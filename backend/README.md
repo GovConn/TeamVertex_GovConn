@@ -217,6 +217,3 @@ Prefix: `/api/v1/auth` (or token endpoints)
 
 This repository includes a `LICENSE` file. Check it for license details.
 
----
-
-For any specific endpoint examples or to generate a more detailed reference for a particular module (full request/response examples, schema fields), tell me which module you want documented and I will add full examples.
