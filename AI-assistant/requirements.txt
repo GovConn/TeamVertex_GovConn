@@ -1,0 +1,13 @@
+python-dotenv
+langchain_community
+langchain_openai
+langchain-core
+langchain-chroma
+langgraph
+unstructured
+langchain-text-splitters
+uvicorn
+fastapi
+itsdangerous
+pypdf
+google-cloud-translate==2.0.1

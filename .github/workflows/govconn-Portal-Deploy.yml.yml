@@ -1,0 +1,51 @@
+name: Build and Push Vite.js Docker Image to ACR
+
+on:
+  push:
+    branches: [portal]
+  workflow_dispatch:
+
+env:
+  IMAGE_NAME: admin-portal
+  ACR_NAME: govconn
+  ACR_LOGIN_SERVER: govconn.azurecr.io
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repository
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 2. Azure Login via Service Principal
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_SECRETS }}
+
+      # 3. Log in to Azure Container Registry
+      - name: Azure ACR Login
+        run: az acr login --name ${{ env.ACR_NAME }}
+
+      # 4. Create .env for build-time variables (optional)
+      - name: Create .env File
+        run: |
+          cd portal
+          echo "VITE_API_BASE_URL=${{ secrets.VITE_API_BASE_URL }}" > .env
+          echo ".env file created successfully."
+
+      # 5. Build and Push Docker Image
+      - name: Build and Push Docker Image
+        run: |
+          cd portal
+          # Tag with commit SHA
+          IMAGE_TAG=${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+          # Build Docker image
+          docker build -t $IMAGE_TAG -t ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:latest .
+
+          # Push images to ACR
+          docker push $IMAGE_TAG
+          docker push ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:latest
