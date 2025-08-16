@@ -60,10 +60,3 @@ services:
     depends_on:
       - backend
       - ai_assistant
-
-  redis:
-    image: redis:7-alpine
-    container_name: gov_redis
-    restart: always
-    ports:
-      - "6379:6379"
