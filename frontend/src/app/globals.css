@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@100..900&family=Noto+Sans+Tamil:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+
+  /* fonts */
+  --font-poppins: 'Poppins', sans-serif;
+  --font-sinhala: 'Noto Sans Sinhala', sans-serif;
+  --font-tamil: 'Noto Sans Tamil', sans-serif;
+
+  /* MAIN Colors */
+  --color-mainYellow: #FFB900;
+  --color-bgWhite: #FFFFFF;
+  --color-bgDisabled: #F4F4F5;
+
+  /* TEXT Colors */
+  --color-textBlack: #000000;
+  --color-textWhite: #FFFFFF;
+  --color-textGrey: #525252;
+  --color-textLightGrey: #9CA3D3;
+  --color-textDisabled: #212121;
+
+  /* STROKE Colors */
+  --color-strokeFocused: #CA9004;
+  --color-strokeGrey: #BD8CD8;
+  --color-strokeValidation: #E05DEC;
+  --color-strokeError: #F87171;
+  --color-strokeSuccess: #4ADEB0;
+
+  /* BUTTON Colors */
+  --color-buttonPrimaryDefault: #FFB900;
+  --color-buttonPrimaryTextDefault: #000000;
+  --color-buttonPrimaryHover: #E28E00;
+  --color-buttonPrimaryTextHover: #000000;
+  --color-buttonPrimaryDisabled: #F8D984;
+  --color-buttonPrimaryStrokeFocused: #BB6402;
+
+  /* BUTTON Secondary Colors */
+  --color-buttonSecondaryDefault: #000000;
+  --color-buttonSecondaryTextDefault: #FFFFFF;
+  --color-buttonSecondaryHover: #25282b;
+  --color-buttonSecondaryTextHover: #FFFFFF;
+  --color-buttonSecondaryDisabled: #D4D404;
+  --color-buttonSecondaryStrokeFocused: #BB6402;
+
+
+  --radius: 40px;
+  --radius-40: 40px;
+
+
+  --color-input: #bdbcd3;
+
+  /* shadcn Colors */
+  /* TEXT */
+  --color-text-black: #000000;
+  --color-text-white: #ffffff;
+  --color-text-grey: #525252;
+  --color-text-light-grey: #c9c8d3;
+  --color-text-disabled: #212121;
+
+  /* STROKE / FEEDBACK */
+  --color-focused: #ca9904;         /* focus ring */
+  --color-grey: #bdbcd3;            /* borders/inputs */
+  --color-validation: #605dec;      /* accent/validation */
+  --color-error: #f87171;           /* destructive */
+  --color-success: #4ade80;
+  --color-reschedule: #f8d984;         /* warning */
+
+  /* BUTTON PRIMARY */
+  --color-primary-bg: #ffb900;
+  --color-primary-text: #000000;
+  --color-primary-bg-hover: #e28e00;
+  --color-primary-text-hover: #000000;
+  --color-primary-bg-disabled: #f8d984;
+  --color-primary-stroke-focused: #bb6402;
+
+  /* BUTTON SECONDARY */
+  --color-secondary-bg: #000000;
+  --color-secondary-text: #ffffff;
+  --color-secondary-bg-hover: #25282b;
+  --color-secondary-text-hover: #ffffff;
+  --color-secondary-bg-disabled: #d4d4d4;
+  --color-secondary-stroke-focused: #bb6402;
+
+}
+
+
+:root {
+  --radius: 40px;
+
+  /* Surfaces & text */
+  --background: #ffffff;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+
+  /* Semantic tokens backed by brand variables */
+  --primary: var(--color-primary-bg);
+  --primary-foreground: var(--color-primary-text);
+
+  --secondary: var(--color-secondary-bg);
+  --secondary-foreground: var(--color-secondary-text);
+
+  /* Use validation color as general accent; tweak if desired */
+  --accent: var(--color-validation);
+  --accent-foreground: var(--color-text-white);
+
+  /* Neutrals */
+  --muted: #f6f6f6;
+  --muted-foreground: var(--color-text-grey);
+
+  /* Feedback / chrome */
+  --destructive: var(--color-error);
+  --border: var(--color-grey);
+  --input: var(--color-grey);
+  --ring: var(--color-focused);
+
+  /* Charts & sidebar (retain your previous values) */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+@layer base {
+  body {
+    background-color: hsl(var(--color-background));
+    color: hsl(var(--color-foreground));
+    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  }
+  
+  * {
+    border-color: hsl(var(--color-border));
+  }
+}
+
