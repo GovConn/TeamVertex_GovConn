@@ -18,9 +18,9 @@ To transform citizen–government interaction by providing a single, intuitive, 
 * [GovConn AI Assistant](https://github.com/GovConn/AI-assistant) – AI-powered assistant providing smart guidance to citizens.  
 
 
-## ✨ Key Features
+## Key Features
 
-### 1.GovConn Citizen Mobile App
+### [1.GovConn Citizen Mobile App](https://github.com/GovConn/mobile-app/blob/main/README.md)
 - **Unified Access:** Healthcare, licensing, civil registrations, taxes, and more in one app.  
 - **Digital Workflows:** Step-by-step guides for each service with required documents.  
 - **Document Management:** Upload once; reuse across services securely.  
@@ -30,24 +30,24 @@ To transform citizen–government interaction by providing a single, intuitive, 
 
 ### 2. GovConn Web Portal
 
-#### Citizen Portal
+#### [Citizen Portal](https://github.com/GovConn/frontend/blob/main/README.md)
 - Access government services online.  
 - Track requests, appointments, and service status in real time.  
 - Manage documents securely and reuse them across multiple services.  
 
-#### Office Interface
+#### [Office Interface](https://github.com/GovConn/GovPortal/blob/main/README.md)
 - Government staff can manage workflows and approve citizen requests.  
 - Generate reports and monitor performance metrics.  
 - Node-Based Routing: Automated coordination between government authorities.  
 - Analytics & Dashboards: Monitor service performance and optimize resource allocation.  
  
 
-### 3. AI Assistant
+### [3. AI Assistant](https://github.com/GovConn/AI-assistant/blob/main/README.md)
 - **Smart Support:** Provides answers, guidance, and service suggestions to citizens.  
 - **Integration:** Connected with backend services for up-to-date information.  
 - **Deployment:** Runs as a dedicated service, accessible via mobile or web portals.  
 
-### 4. Backend Services
+### [4. Backend Services](https://github.com/GovConn/backend/blob/main/README.md)
 - **Responsibilities:**  
   - Central hub for all GovConn operations, managing citizens, services, appointments, documents, notifications, and AI requests.  
   - Provides APIs consumed by the mobile app, citizen portal, office interface, and AI assistant.  
@@ -61,7 +61,7 @@ To transform citizen–government interaction by providing a single, intuitive, 
 
 
 
-## 🛠️ Tech Stack
+## Tech Stack
 | Component | Stack / Packages |
 |-----------|-----------------|
 | Mobile App | Flutter, Provider, http file_picker, flutter_secure_storage |
@@ -73,7 +73,7 @@ To transform citizen–government interaction by providing a single, intuitive, 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Docker & Docker Compose installed
@@ -98,7 +98,7 @@ docker-compose up --build
 ---
 
 
-## 📚 API Documentation
+## API Documentation
 
 * **Swagger UI:** `http://localhost:8000/docs`
 * **Redoc:** `http://localhost:8000/redoc`
@@ -116,7 +116,7 @@ Endpoints include:
 * `/api/v1/analytics` – retrieve analytics on citizen usage and service metrics
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ```
 +----------------+          +------------------+
@@ -142,6 +142,6 @@ Endpoints include:
 +----------------+
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. 
