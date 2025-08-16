@@ -16,9 +16,9 @@ services:
 
   ai_assistant:
     build:
-      context: ./ai-assistant
+      context: ./Ai-assistant
       dockerfile: Dockerfile
-    container_name: gov_ai_assistant
+    container_name: govconn-ai-assistant
     restart: always
     ports:
       - "8100:8000" # container 8000 -> host 8100
@@ -50,7 +50,7 @@ services:
     build:
       context: ./GovPortal
       dockerfile: Dockerfile
-    container_name: gov_frontend_admin
+    container_name: govconn-portal
     restart: always
     ports:
       - "3001:4173"
