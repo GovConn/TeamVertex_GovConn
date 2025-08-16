@@ -1,0 +1,25 @@
+# Node dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build output (will be re-created in container)
+dist
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# IDE and editor settings
+.vscode
+.idea
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git files
+.git
+.gitignore
