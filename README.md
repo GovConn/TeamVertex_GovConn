@@ -1,17 +1,26 @@
-# GovConn — Unified Government Services Platform 📱🇱🇰
+# GovConn — Unified Government Services Platform
 
 **GovConn** is a complete digital ecosystem that unifies government services for citizens, offices, and administrators. Built by **Team Vertex**, GovConn provides a seamless, secure, and interactive experience via a mobile app, citizen portal, office interface, and AI-powered assistant.
 
 ---
 
-## 🌟 Vision
+## Vision
 To transform citizen–government interaction by providing a single, intuitive, and secure platform for accessing, managing, and tracking all government services digitally.  
 
 ---
 
+## Repositories
+
+* [GovConn Mobile App](https://github.com/GovConn/mobile-app) – Flutter-based mobile application for citizens.  
+* [GovConn Backend](https://github.com/GovConn/backend) – FastAPI backend managing services, citizens, appointments, documents, and AI integration.  
+* [GovConn GovPortal](https://github.com/GovConn/GovPortal) – Web portal for citizens and government office staff.  
+* [GovConn Frontend](https://github.com/GovConn/frontend) – Next.js frontend connecting with backend and AI assistant.  
+* [GovConn AI Assistant](https://github.com/GovConn/AI-assistant) – AI-powered assistant providing smart guidance to citizens.  
+
+
 ## ✨ Key Features
 
-### 1. GovConn Citizen Mobile App
+### 1.GovConn Citizen Mobile App
 - **Unified Access:** Healthcare, licensing, civil registrations, taxes, and more in one app.  
 - **Digital Workflows:** Step-by-step guides for each service with required documents.  
 - **Document Management:** Upload once; reuse across services securely.  
@@ -19,11 +28,19 @@ To transform citizen–government interaction by providing a single, intuitive, 
 - **Real-Time Tracking:** Monitor progress and receive instant notifications.  
 - **Feedback & Ratings:** Submit reviews to improve accountability.  
 
-### 2. GovConn Web Portal (Citizen & Office Interface)
-- **Citizen Portal:** Access services online, track requests, and manage documents.  
-- **Office Interface:** Government staff can manage workflows, approve requests, and generate reports.  
-- **Node-Based Routing:** Automated coordination between government authorities.  
-- **Analytics & Dashboards:** Monitor service performance and optimize resource allocation.  
+### 2. GovConn Web Portal
+
+#### Citizen Portal
+- Access government services online.  
+- Track requests, appointments, and service status in real time.  
+- Manage documents securely and reuse them across multiple services.  
+
+#### Office Interface
+- Government staff can manage workflows and approve citizen requests.  
+- Generate reports and monitor performance metrics.  
+- Node-Based Routing: Automated coordination between government authorities.  
+- Analytics & Dashboards: Monitor service performance and optimize resource allocation.  
+ 
 
 ### 3. AI Assistant
 - **Smart Support:** Provides answers, guidance, and service suggestions to citizens.  
